@@ -6,12 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML-select_option - Blog | huq_biu</title>
+  <title>HTML-form - Blog | huq_biu</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  
+  <meta name="description" content="元素form元素定义一个表单 - 是一个容器元素(包含...">
   <meta name="author" content="huq_biu">
   <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -138,7 +138,7 @@
         <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
       
     </div>
-    <div class="center">HTML-select_option</div>
+    <div class="center">HTML-form</div>
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
@@ -181,24 +181,54 @@
     <section class="head">
   <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
-    <h1 class="head-title">HTML-select_option</h1>
+    <h1 class="head-title">HTML-form</h1>
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>2021-1-17</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>0</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1263</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
-        
+        <h1 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h1><p>form元素定义一个表单 - 是一个容器元素(包含用于向服务器提交信息的交互控件)</p>
+<figure class="highlight html"><figcaption><span>form</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span><br>    交互控件列表<br><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><h2 id="action-提交地址"><a href="#action-提交地址" class="headerlink" title="action(提交地址)"></a>action(提交地址)</h2><p>action属性指定表单的提交地址( URL )</p>
+<blockquote>
+<p>该属性可被&lt;button&gt; &lt;input type=”submit”&gt; &lt;input type=”image”&gt;元素上的formaction属性覆盖</p>
+</blockquote>
+<h2 id="method-提交方式"><a href="#method-提交方式" class="headerlink" title="method(提交方式)"></a>method(提交方式)</h2><p>method属性指定表单的提交方式 get(默认值) / post<br>get – 表单数据会附加在action属性的URL中( ? 作为分隔符)<br>post – 表单数据会包含在表单体内然后发送给服务器</p>
+<blockquote>
+<p>该属性可被&lt;button&gt; &lt;input type=”submit”&gt; &lt;input type=”image”&gt;元素上的formmethod属性覆盖</p>
+</blockquote>
+<h2 id="enctype-数据编码"><a href="#enctype-数据编码" class="headerlink" title="enctype(数据编码)"></a>enctype(数据编码)</h2><p>enctype属性指定表单数据的编码方式<br>application/x-www-form-urlencoded – 默认值<br>multipart/form-data – 当表单中含有文件时(&lt;input type=”file”&gt;)必须使用此值<br>text/plain – 用于调试</p>
+<blockquote>
+<p>该属性可被&lt;button&gt; &lt;input type=”submit”&gt; &lt;input type=”image”&gt;元素上的formaction属性覆盖</p>
+</blockquote>
+<h2 id="novalidate-表单验证"><a href="#novalidate-表单验证" class="headerlink" title="novalidate(表单验证)"></a>novalidate(表单验证)</h2><p>novalidate属性(布尔属性)指定表单提交时不启用表单验证</p>
+<blockquote>
+<p>该属性可被&lt;button&gt; &lt;input type=”submit”&gt; &lt;input type=”image”&gt;元素上的formvalidate属性覆盖</p>
+</blockquote>
+<h2 id="target-显示窗口"><a href="#target-显示窗口" class="headerlink" title="target(显示窗口)"></a>target(显示窗口)</h2><p>target属性指定响应信息的显示窗口<br>_self – 默认值 在当前浏览上下文中加载<br>_blank – 在新的未命名的浏览上下文中加载<br>_parent – 在当前上下文的父级浏览上下文中加载 没有则表现与_self表现一致<br>_top – 在最顶级的浏览上下文中加载 没有则与_self表现一致</p>
+<blockquote>
+<p>该属性可被&lt;button&gt; &lt;input type=”submit”&gt; &lt;input type=”image”&gt;元素上的formtarget属性覆盖</p>
+</blockquote>
+<h2 id="autocomplete-自动填充"><a href="#autocomplete-自动填充" class="headerlink" title="autocomplete(自动填充)"></a>autocomplete(自动填充)</h2><p>autocomplete属性指定表单是否启用自动填充<br>on – 默认值 启用自动填充<br>off – 禁用自动完成</p>
+<blockquote>
+<p>该属性可被表单子元素的autocomplete属性覆盖</p>
+</blockquote>
+<h2 id="name-表单名称"><a href="#name-表单名称" class="headerlink" title="name(表单名称)"></a>name(表单名称)</h2><p>name属性指定表单的名称</p>
+<blockquote>
+<p>该属性值必须是网页中唯一的 不能是空字符串<br>如果一个表单控件没有设置name属性 那么这个控件的值就不会作为键值对提交给服务器</p>
+</blockquote>
+
       </section>
       <section class="extra">
         
           <ul class="copyright">
   
     <li><strong>本文作者：</strong>huq_biu</li>
-    <li><strong>本文链接：</strong><a href="https://huq-biu.github.io/2021/01/17/HTML-select-option/index.html" title="https:&#x2F;&#x2F;huq-biu.github.io&#x2F;2021&#x2F;01&#x2F;17&#x2F;HTML-select-option&#x2F;index.html">https:&#x2F;&#x2F;huq-biu.github.io&#x2F;2021&#x2F;01&#x2F;17&#x2F;HTML-select-option&#x2F;index.html</a></li>
+    <li><strong>本文链接：</strong><a href="https://huq-biu.github.io/HTML-form/index.html" title="https:&#x2F;&#x2F;huq-biu.github.io&#x2F;HTML-form&#x2F;index.html">https:&#x2F;&#x2F;huq-biu.github.io&#x2F;HTML-form&#x2F;index.html</a></li>
     <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
   
 </ul>
@@ -215,12 +245,12 @@
 </section>
         
         
-  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8/" rel="tag">下拉列表</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/" rel="tag">前端知识</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A1%A8%E5%8D%95/" rel="tag">表单</a></li></ul> 
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/" rel="tag">前端知识</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A1%A8%E5%8D%95/" rel="tag">表单</a></li></ul> 
 
         
   <nav class="nav">
-    <a></a>
-    <a href="/2021/01/17/HTML-form/">HTML-form<i class="iconfont iconright"></i></a>
+    <a href="/HTML-select/"><i class="iconfont iconleft"></i>HTML-select</a>
+    <a href="/HTML-intro/">HTML<i class="iconfont iconright"></i></a>
   </nav>
 
       </section>
@@ -233,7 +263,7 @@
           
   <aside class="toc-wrap">
     <h3 class="toc-title">文章目录：</h3>
-    
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%83%E7%B4%A0"><span class="toc-text">元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7"><span class="toc-text">属性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#action-%E6%8F%90%E4%BA%A4%E5%9C%B0%E5%9D%80"><span class="toc-text">action(提交地址)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#method-%E6%8F%90%E4%BA%A4%E6%96%B9%E5%BC%8F"><span class="toc-text">method(提交方式)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#enctype-%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81"><span class="toc-text">enctype(数据编码)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#novalidate-%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81"><span class="toc-text">novalidate(表单验证)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#target-%E6%98%BE%E7%A4%BA%E7%AA%97%E5%8F%A3"><span class="toc-text">target(显示窗口)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#autocomplete-%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85"><span class="toc-text">autocomplete(自动填充)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#name-%E8%A1%A8%E5%8D%95%E5%90%8D%E7%A7%B0"><span class="toc-text">name(表单名称)</span></a></li></ol></li></ol>
   </aside>
 
         
